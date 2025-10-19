@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 //Middleware
-app.use(helmet());
+app.use(express.static("assets"));
 
 //Views
 app.set("view engine", "ejs");
